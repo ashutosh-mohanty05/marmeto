@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggle-theme"><span class="material-symbols-outlined">
+        dark_mode
+        </span>
+        </span></button>
+  </div>
+  <div class="product-container">
+    <div class="product-image">
+      <img id="main-image" src="/image/saree1.jpg" alt="Product Image">
+      <div class="thumbnails">
+        <img class="thumbnail" src="/image/saree1.jpg" alt="Thumbnail 1">
+        <img class="thumbnail" src="/image/saree2.jpg" alt="Thumbnail 2">
+        <img class="thumbnail" src="/image/saree3.jpg" alt="Thumbnail 3">
+      </div>
+    </div>
+    <div class="product-details">
+      <h2 id="product-vendor">Marmeto</h2>
+      <h1 id="product-title">Unique saree</h1>
+      <p id="price">₹3099.99</p>
+      <p id="compare-at-price">
+        <span>Original:</span>
+        <span id="compare-price">₹6199.99</span>
+      </p>
+      <p id="percentage-off">50% Off</p>
+      <div class="color-selector">
+        <span>Color:</span>
+        <button class="color-option selected" style="background-color: red;"data-color="red"></button>
+        <button class="color-option" style="background-color: green;"data-color="green"></button>
+        <button class="color-option" style="background-color: yellow;"data-color="yellow"></button>
+      </div>
+      <div class="size-selector">
+        <span>Fabric:</span>
+        <select id="fabric-select">
+          <option value="cotton">Cotton</option>
+          <option value="silk">Silk</option>
+          <option value="chiffon">Chiffon</option>
+          <option value="georgette">georgette,</option>
+          <option value="crepe">crepe</option>
+          <option value="satin">satin</option>
+        </select>
+      </div>
+      
+      </div>
+      <div class="quantity-selector">
+        <span>Quantity:</span>
+        <input type="number" id="quantity" value="1" min="1">
+      </div>
+      <div class="cart">
+      <button id="add-to-cart">Add to Cart</button>
+    </div>
+      <div id="product-description">
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna eu maximus eleifend, ex magna iaculis dolor, in cursus mauris tellus vitae nulla.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
